@@ -1,0 +1,22 @@
+{
+  "name": "braintree-express-app",
+  "version": "1.0.0",
+  "description": "A simple Express application to handle payments using Braintree's Node SDK.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "braintree": "^3.29.0",
+    "dotenv": "^10.0.0",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "author": "",
+  "license": "ISC"
+}

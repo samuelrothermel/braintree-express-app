@@ -1,0 +1,56 @@
+<div class='container'>
+  <div class='main-content'>
+    <h1>Braintree Payment Integrations</h1>
+    <p>Explore various payment experiences, each with its own unique features
+      and capabilities.</p>
+    <h2>Drop-In UI</h2>
+    <p>The Drop-In UI is a pre-built UI component that provides a simple and
+      secure way to accept payments. When a user successfully completes the UI,
+      your client code obtains a payment method nonce for use on your server.</p>
+    <h3>Checkout Variations</h3>
+    <h4>One-time Payments</h4>
+    <p>Pay with PayPal's One-time payments is a one-click solution that
+      accelerates your buyer's checkout experience by skipping manual data
+      entry. Buyers can use PayPal to check out anywhere in their shopping
+      journey.</p>
+    <p>Unlike Vaulted Payments, One-time payments do not provide the ability to
+      store a customer's PayPal account in the Vault. If you want to store a
+      customer's PayPal account within a Vault during One-time payments, view
+      the Checkout with Vault integration guide.</p>
+    <a class='button' href='/checkout'>One-time Payments</a>
+    <h4>Checkout with Vault</h4>
+    <p>Checkout with Vault is a one-time PayPal Checkout experience that
+      includes vaulting capabilities. It automatically creates a PayPal Billing
+      Agreement and stores a customer's PayPal account in the Braintree Vault,
+      allowing you to charge the account in the future without requiring your
+      customer to re-authenticate with PayPal and choose a payment method within
+      their wallet.</p>
+    <p>If you are integrating Pay Later offers, you'll need to render the Pay
+      Later button in addition to the PayPal button.</p>
+    <a class='button' href='/checkout'>Checkout with Vault</a>
+    <h4>Vaulted Payments</h4>
+    <p>Vaulted payments with PayPal account will allow you to charge the account
+      in the future without requiring your customer to be present during the
+      transaction or re-authenticate with PayPal when they are present during
+      the transaction.</p>
+    <p>The Vault is used to process payments with our recurring billing feature,
+      and is also used for non-recurring transactions so that your customers
+      don't need to re-enter their information each time they make a purchase
+      from you.</p>
+    <a class='button' href='/checkout'>Go to Checkout</a>
+    <h4>Recurring Payments</h4>
+    <p>Recurring payments with PayPal utilize PayPal Billing Agreements through
+      PayPal's Billing Without Purchase Checkout flow. PayPal's Billing Without
+      Purchase Checkout flow is a two-stage process:</p>
+    <p>1. Create a billing agreement: After a customer completes PayPal
+      Checkout, a Payment Token, a proxy for the PayPal Billing Agreement ID,
+      will be returned to you. This Payment Token should be stored against that
+      customer's account and can subsequently be used to initiate payments
+      whenever necessary.</p>
+    <p>2. Initiating a payment against the billing agreement: When you need to
+      take a payment from your customer, use the Payment Token returned during
+      Billing Agreement creation to initiate a payment against that PayPal
+      account.</p>
+    <a class='button' href='/checkout'>Go to Recurring Payments</a>
+  </div>
+</div>

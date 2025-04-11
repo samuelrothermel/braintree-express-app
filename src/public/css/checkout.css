@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  height: 100vh;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px;
+}
+
+.sidebar,
+.response-sidebar {
+  width: 300px;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.response-sidebar {
+  margin-left: 20px;
+}
+
+.sidebar h2,
+.response-sidebar h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.response-sidebar p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+  word-wrap: break-word; /* Ensure long text wraps properly */
+}
+
+.main-content {
+  flex: 1;
+}
+
+form#payment-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px; /* Add spacing below the heading */
+  font-size: 24px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+input#amount {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+div#dropin-container {
+  margin-bottom: 20px;
+}
+
+button[type='submit'] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+a.button:hover {
+  background-color: #0056b3;
+}

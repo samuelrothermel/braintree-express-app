@@ -1,0 +1,35 @@
+<div class='container'>
+  <div class='sidebar'>
+    <h2>Sandbox Testing Info</h2>
+    <ul>
+      <li>Test Credit Card: 4111 1111 1111 1111</li>
+      <li>Expiration Date: Any future date</li>
+      <li>CVV: Any 3 digits</li>
+      <li>Use the Braintree sandbox for testing transactions.</li>
+    </ul>
+  </div>
+  <div class='main-content'>
+    <h1>One-Time Payment Checkout Page</h1>
+    <form id='payment-form' action='/api/payments/checkout' method='POST'>
+      <input id='amount' type='hidden' name='amount' value='0.00' />
+      <p>Product Total: $20</p>
+      <p>Shipping Method: Free Shipping (Free)</p>
+      <p>Tax: $<span id='tax-total'>0.00</span></p>
+      <p>Total: $<span id='total-amount'>0.00</span></p>
+      <div id='dropin-container'></div>
+      <button type='submit'>Submit Order</button>
+    </form>
+  </div>
+  <div class='response-sidebar'>
+    <h2>Transaction Response</h2>
+    <p id='transaction-id'>Transaction ID: Not available</p>
+    <p id='transaction-amount'>Amount: Not available</p>
+    <p id='transaction-status'>Status: Not available</p>
+    <p id='transaction-type'>Type: Not available</p>
+    <p id='card-type'>Card Type: Not available</p>
+    <p id='processor-response'>Processor Response: Not available</p>
+    <p id='processor-authorization-code'>Authorization Code: Not available</p>
+    <p id='merchant-name'>Merchant Name: Not available</p>
+    <p id='network-transaction-id'>Network Transaction ID: Not available</p>
+  </div>
+</div>
